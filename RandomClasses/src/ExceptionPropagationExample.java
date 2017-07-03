@@ -34,9 +34,8 @@ public class ExceptionPropagationExample {
 		//tells the user which method we are in
 		System.out.println("setNames method: \n");
 		
-		
-		if(arrayOfNames.length != names.length){
-			throwingException(names);
+		if(arrayOfNames.length != names.length)
+			throwingException(array);
 		else{
 			//assigns the names to the array
 			for(int i = 0; i < array.length; i++)
@@ -51,6 +50,7 @@ public class ExceptionPropagationExample {
 		
 		//tells the user which method we are in
 		System.out.println("throwingException method: \n");
+		
 		
 			//try-catch block
 			try {
